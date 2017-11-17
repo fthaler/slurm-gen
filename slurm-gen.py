@@ -40,7 +40,7 @@ def int_or_float(s):
 
 def parse_id_range(s):
     if s.lower() == 'id':
-        return ['${SLURM_TASK_ID}']
+        return ['${SLURM_ARRAY_TASK_ID}']
     else:
         raise ValueError('can not parse id')
 
